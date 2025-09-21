@@ -352,7 +352,7 @@ return [
     ],
     'productName' => "Classera EMS",
     'productLongName' => "Classera Education Management System",
-    'installerCore' => true,
+    'installerCore' => false,
     'installerSchool' => false,
     'installerCensus' => false,
     'installerVaccinations' => false
