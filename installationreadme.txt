@@ -35,6 +35,11 @@ Database Connection Information:
 IMPORTANT: Use 'mysql' as the hostname, NOT 'localhost'
 This is because Docker containers communicate using internal hostnames.
 
+The installer will automatically create:
+- Database: classera_ems
+- Database User: classera_user
+- Database Password: [Your chosen password from the form]
+
 Administrator Account
 ---------------------
 - Account Username: admin (pre-filled, disabled)
@@ -93,6 +98,10 @@ Common Issues:
 
 4. Form fields not showing in installer
    - Solution: This has been fixed in the latest version
+
+5. "localhost redirected you too many times" after database configuration
+   - Solution: This has been fixed by setting installerCore to false in config/app.php
+   - The installer now uses correct Classera database settings instead of old OpenEMIS values
 
 Container Management Commands:
 -----------------------------
