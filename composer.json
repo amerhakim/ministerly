@@ -1,14 +1,21 @@
 {
-    "name": "korditpteltd/openemis-phpoe",
-    "description": "KORDIT OpenEMIS CORE",
-    "homepage": "https://demo.openemis.org/core",
+    "name": "classera/ems",
+    "description": "Classera Education Management System",
+    "homepage": "https://classera.com/ems",
     "type": "project",
     "license": "GPL-2.0",
+    "authors": [
+        {
+            "name": "Classera",
+            "email": "support@classera.com",
+            "homepage": "https://classera.com"
+        }
+    ],
     "require": {
-        "php": ">=5.4.16",
+        "php": ">=7.4.0",
         "cakephp/cakephp": "3.3.*",
         "mobiledetect/mobiledetectlib": "2.*",
-        "PHPOffice/PHPExcel": "dev-master",
+        "phpoffice/phpexcel": "dev-master",
         "korditpteltd/kd-cakephp-restful": "^1.1",
         "admad/cakephp-jwt-auth": "2.0.1",
         "korditpteltd/kd-cakephp-webhooks": "^1.0",

@@ -6,16 +6,16 @@
 - Bug Fixed: Institutions>Attendance>Students: No scheduled class button is taking very long to load and the query takes a long time to run.
 
 ### [3.107.1] - 2024-06-14
-- Bug Fixed: OpenEMIS Core Training v4 APIs is not working due to changes in table structure
+- Bug Fixed: Classera EMS Training v4 APIs is not working due to changes in table structure
 - Bug Fixed: Institutions > Infrastructure > Overview > Floor > Add: When adding buildings, they face a 404 error.
 - Bug Fixed: Institutions > Performance > Report Cards: The GPA for Student 1602270826 is not showing despite regenerating
 - Bug Fixed: API: When retrieving the institution schedule timetable using API v4, it gives a 404 error status
 - Bug Fixed: Institutions > Performance > Report Cards > Merge and Download PDF: When merging and downloading PDF for students report card, the page gives a 404 error.
 
 ### [3.107.0] - 2024-05-20
-- Implemented: Develop changes to OpenEMIS Core Training feature
+- Implemented: Develop changes to Classera EMS Training feature
 - Implemented: Develop a migration script to remove edit account permission
-- Implemented: Remove OpenEMIS Core swagger v2 API YAML file
+- Implemented: Remove Classera EMS swagger v2 API YAML file
 - Bug Fixed: Institutions > Staff: User can delete position that is still active
 - Bug Fixed: Institutions>Search: when searching for schools that have " ʻ " OR " ' ", the search returned schools with the " ʻ " and " ' "even if search string contained " ' "
 - Bug Fixed: Institutions>Finance>Institution Fees: Fees that show 0 should not show
@@ -27,8 +27,8 @@
 - Bug Fixed: Institutions > Classes > Unit / Course : Labels are not reflected
 
 ### [3.106.0] - 2024-05-10
-- Implemented: Develop OpenEMIS Core Training v4 APIs
-- Implemented: Develop changes to OpenEMIS Core Staff v4 API
+- Implemented: Develop Classera EMS Training v4 APIs
+- Implemented: Develop changes to Classera EMS Staff v4 API
 - Bug Fixed: Institutions > Infrastructure > Overview > Buildings > Add: When adding buildings, they face a 404 error.
 - Bug Fixed: Institutions>Performance>Report Cards: Error generating Report Card for Student 117372
 - Bug Fixed: Reports>Institutions: Report should not show any error
@@ -39,8 +39,8 @@
 - Bug Fixed: Administration > Performance > Assessments > Assessments Periods > Edit: The field period weight is editable
 
 ### [3.105.0] - 2024-05-02
-- Implemented: Develop changes to OpenEMIS Core Institution v4 API
-- Implemented: Develop OpenEMIS Core Themes v4 APIs
+- Implemented: Develop changes to Classera EMS Institution v4 API
+- Implemented: Develop Classera EMS Themes v4 APIs
 - Bug Fixed: Reports > Custom > Final Emis تقرير الفاينل ايمس : Error Message is showing for Final Emis Report
 - Bug Fixed: Create migration to update primary keys to prevent duplicates
 - Bug Fixed: Institutions > Staff > Add: If there is no configuration under Add New Staff, the system should allow user to add the staff
@@ -97,7 +97,7 @@
 - Bug Fixed: Update Swagger for API: Post Security Users is showing get response
 - Bug Fixed: Institutions > Students > Add: Able to transfer students when capacity is full
 - Bug Fixed: Administration > Examinations > Results > Import: When downloading the importing template for Examinations results, the page just loads and not showing any error or not downloading the template
-- Bug Fixed: Registration: When inputting email to register students in OpenEMIS Registrations, the email does not show in OpenEMIS Core
+- Bug Fixed: Registration: When inputting email to register students in OpenEMIS Registrations, the email does not show in Classera EMS
 - Bug Fixed: Develop API Directory add staff/student/guardians feature Part 2
 - Bug Fixed: Institutions > Academic > Classes : Classes is not sorted in ascending order
 - Bug Fixed: Institutions > Report Cards > Comments: Class subject staff not able to insert comments
@@ -105,7 +105,7 @@
 
 ### [3.99.1] - 2024-03-15
 - Implemented: Update Swagger for institution student and institution student absence v4 APIs
-- Implemented: Develop OpenEMIS Core Meals v4 APIs
+- Implemented: Develop Classera EMS Meals v4 APIs
 - Bug Fixed: Administration > Security > Groups: When users are not found upon adding users to the user group page, the error message says "No Guardian found
 - Bug Fixed: Institutions > Performance > Report Cards: Principal placeholder is showing wrongly when same position number is used for same staff
 - Bug Fixed: Administration>System Configuration>Webhook: First name is showing weirdly
@@ -169,7 +169,7 @@
 
 ### [3.98.11] - 2024-01-26
 - Implemented: Develop Staff Attendance feature v4 APIs
-- Bug Fixed: Update Swagger for OpenEMIS Core v2 APIs (CakePHP) as v4 APIs (Laravel) - Part 4 
+- Bug Fixed: Update Swagger for Classera EMS v2 APIs (CakePHP) as v4 APIs (Laravel) - Part 4 
 - Bug Fixed: Institutions > Student > Add: Upon adding, the student is not in the pending admission page - this applies when system configuration "Add New Student > "Default Student Admission Status" is set to "Open"
 - Bug Fixed: Institutions > Students > Add: When adding the file custom field for student, the custom field does not appear on the add student page
 - Bug Fixed: Institutions > Performance > Report Cards: Principal placeholder is showing wrongly
@@ -337,7 +337,7 @@
 ### [3.97.2] - 2023-10-30
 - Implemented: Develop Sex and Date of Birth fields for the Student List survey form
 - Implemented: Develop a function to copy student report cards in Data Management > Copy feature
-- Bug Fixed: OpenEMIS Core(Security): Security Fixes Part 3 add
+- Bug Fixed: Classera EMS(Security): Security Fixes Part 3 add
 - Bug Fixed: Administration > Data Management > Copy: Getting 404 error
 - Bug Fixed: Institution > General > Overview > Profile > Classes: When viewing or downloading PDF for classes profile, the page navigates to 504 gateway error/404 error
 - Bug Fixed: Institutions>Students>Transfer: User is trying to transfer student but it is unable to because of behaviours
@@ -358,7 +358,7 @@
 - Bug Fixed: Administration > Security > Groups: When an institution is DELETED, the system auto-creates a new user group linked to the institution deleted
 - Bug Fixed: Institutions > Attendance > Staff: The timebox does not go away when user clicking away
 - Bug Fixed: Administration > Data Management > Copy: Change the system logic to only copy assessment templates/periods that have data last academic period
-- Bug Fixed: OpenEMIS Registrations: Mandatory Custom Fields in OpenEMIS Core is not showing as mandatory in OpenEMIS Registrations
+- Bug Fixed: OpenEMIS Registrations: Mandatory Custom Fields in Classera EMS is not showing as mandatory in OpenEMIS Registrations
 - Bug Fixed: Report > Students> Student Health Report: The data is empty when the area level or area name field is filtered where is not selecting
 - Bug Fixed: Institutions>Student>Guardian>Add/Institutions>Students>Add: There is no permission for user to add guardian of students
 - Bug Fixed: Report>Institution>Cases: Filters for area education do not take consideration for parent_id
@@ -384,12 +384,12 @@
 - Bug Fixed: Institutions > Staff > Transfer: When staff is transferred, the staff position in the previous institution is still linked to the staff
 
 ### [3.96.1] - 2023-10-06
-- Bug Fixed: OpenEMIS Registration: When institutions are inactive in OpenEMIS Core, the institutions still show in the dropdown list in OpenEMIS Registrations
+- Bug Fixed: OpenEMIS Registration: When institutions are inactive in Classera EMS, the institutions still show in the dropdown list in OpenEMIS Registrations
 - Bug Fixed: Administration>Workflows: Users given permission for workflows not seeing assignee
 - Bug Fixed: Report > Student > Contacts : Report is taking too long for user
 
 ### [3.96.0] - 2023-10-05
-- Implemented: Develop OpenEMIS Core v4 APIs for the examination features
+- Implemented: Develop Classera EMS v4 APIs for the examination features
 - Bug Fixed: Administration>Data Management>Archive: Data is showing 0 but user is able to see archive when clicking archive button
 - Bug Fixed: Institutions > Infrastructures > Overview: Change warning message
 - Bug Fixed: Institution > Statistics > Standard: The report is stuck in progress
@@ -401,7 +401,7 @@
 - Bug Fixed: Institutions>Performance>Assessments: When an user did not enter marks, it should not show as 0.00
 - Bug Fixed: Reports > Institutions> Classes: The data in the report is inconsistent
 - Bug Fixed: Reports > Surveys: Institutions - Not Completed are not showing
-- Bug Fixed: OpenEMIS Core(Security): Security Fixes Part 4
+- Bug Fixed: Classera EMS(Security): Security Fixes Part 4
 - Bug Fixed: Institutions > Students > Import: Not able to import students
 - Bug Fixed: Institutions > Students > Promote: 404 error when promoting students
 - Bug Fixed: Institutions > Staff>Position: When changing from not homeroom teacher staff type to homeroom teacher staff type, there is an error message
@@ -410,14 +410,14 @@
 - Bug Fixed: Institutions > Appointments > Positions: When permission is given to a security role to delete delete institution positions, users is still unable to delete institution positions
 
 ### [3.95.2] - 2023-09-28
-- Bug Fixed: OpenEMIS Core(Security): Security Fixes
+- Bug Fixed: Classera EMS(Security): Security Fixes
 - Bug Fixed: Institutions > Survey > Forms: The date field for repeater form alignment seems to be out
 - Bug Fixed: Institutions > Positions > Import: The error message displaying is empty when importing institutions position fail
-- Bug Fixed: OpenEMIS Core(Security): Security Fixes Part 3
+- Bug Fixed: Classera EMS(Security): Security Fixes Part 3
 
 ### [3.95.1] - 2023-09-26
 - Implemented: Create a config item to lock an account after "n" number of failed login attempts
-- Implemented: Development of OpenEMIS Core v2 APIs (CakePHP) as v4 APIs (Laravel) - Part 2
+- Implemented: Development of Classera EMS v2 APIs (CakePHP) as v4 APIs (Laravel) - Part 2
 - Bug Fixed: Institutions>Staff>Import: User is not able to import staff
 - Bug Fixed: Administration > System Setup > Academic Periods: When deleting academic period, the page goes to 404 error
 - Bug Fixed: Directory > Professional > Licenses: 404 error when approving licenses
@@ -430,7 +430,7 @@
 ### [3.95.0] - 2023-09-20
 - Implemented: Develop type and priority fields for the cases feature
 - Implemented: Develop a function to copy Institution > Performance > Assessments from one academic period to another-Copy of assessment periods
-- Implemented: Development of OpenEMIS Core v2 APIs (CakePHP) as v4 APIs (Laravel) - Adding page, order and limit to get apis
+- Implemented: Development of Classera EMS v2 APIs (CakePHP) as v4 APIs (Laravel) - Adding page, order and limit to get apis
 - Bug Fixed: Staff > Professional > Awards: When adding the staff awards, even when there is successful message, the record is not showing
 - Bug Fixed: Students > General > Nationalities: The page gives a 404 error
 - Bug Fixed: OpenEMIS Registrations: Other countries is not showing in the drop down list for address area and birthplace area
@@ -456,7 +456,7 @@
 - Bug Fixed: Institutions>Survey>Forms: Survey form that are uploaded in survey app are not reflected correctly in core interface
 
 ### [3.94.2] - 2023-09-14
-- Implemented: Develop changes to the OpenEMIS Core (CakePHP) v2 upload survey API to include the student list question
+- Implemented: Develop changes to the Classera EMS (CakePHP) v2 upload survey API to include the student list question
 - Bug Fixed: Institutions > Students > Import: Not able to import students
 - Bug Fixed: Institutions > Students: The institutions showing for the selected area are not showing correctly
 - Bug Fixed: Improvements to Tertiary Education feature
@@ -467,10 +467,10 @@
 - Bug Fixed: Institutions > Students> Add: When adding the students, the page load very slow/does not load at all
 
 ### [3.94.1] - 2023-09-08
-- Implemented: Development of OpenEMIS Core v2 APIs (CakePHP) as v4 APIs (Laravel) - Part 4
+- Implemented: Development of Classera EMS v2 APIs (CakePHP) as v4 APIs (Laravel) - Part 4
 - Bug Fixed: Institutions>Performance>Assessments: Duplicate queries are found
 - Bug Fixed: Institutions > Academic > Curriculars: When editing, the page goes to 404 error page
-- Bug Fixed: OpenEMIS Registration: The student's custom field for the field type "File" configured in OpenEMIS Core is not working in OpenEMIS Registration
+- Bug Fixed: OpenEMIS Registration: The student's custom field for the field type "File" configured in Classera EMS is not working in OpenEMIS Registration
 - Bug Fixed: Migration fix : Renaming POCOR-7395 to run earlier as it affects other migration files
 - Bug Fixed: Administration>Data Management>Copy: Infrastructure custom fields are not copied over
 - Bug Fixed: Home Page > Workbench: Workbench for behaviour is not showing up for assign user in their profile
@@ -479,7 +479,7 @@
 - Bug Fixed: Not able to delete users
 
 ### [3.94.0] - 2023-08-31
-- Implemented: Develop APIs for OpenEMIS Core add student/staff/guardian functions
+- Implemented: Develop APIs for Classera EMS add student/staff/guardian functions
 - Implemented: Develop updates for institution student and institution student absence APIs
 - Implemented: Develop a function to copy Institution > Performance > Assessments from one academic period to another
 - Bug Fixed: Administration > Data Management > Copy : Competencies
@@ -511,7 +511,7 @@
 - Bug Fixed: Institutions > Add page : System does not INSERT security_group_institutions when a new Institution is created
 
 ### [3.92.2] - 2023-08-22
-- Bug Fixed: Development of OpenEMIS Core v2 APIs (CakePHP) as v4 APIs (Laravel) - Part 3 Fixes
+- Bug Fixed: Development of Classera EMS v2 APIs (CakePHP) as v4 APIs (Laravel) - Part 3 Fixes
 - Bug Fixed: Administration > System Setup > Field Options > Extracurricular Types: Extracurricular should be removed
 - Bug Fixed: Administrative > Meals: A 404 error is showing when adding the meal programme
 - Bug Fixed: Institutions > Survey > Forms: There is no date field type displaying for student_list questions even when it is a date field
@@ -566,7 +566,7 @@
 - Implemented: Develop changed to the Administration > Examinations > Students page
 - Implemented: Develop Staff Behaviour Report
 - Implemented: Develop "External Data Source - Exams" config page for CXC
-- Implemented: Development of OpenEMIS Core v2 APIs (CakePHP) as v4 APIs (Laravel) - Part 3
+- Implemented: Development of Classera EMS v2 APIs (CakePHP) as v4 APIs (Laravel) - Part 3
 - Bug Fixed: Administrations > Communications > Alerts : Duplicated values are showing
 - Bug Fixed: Administration > Custom Fields > Institutions: The custom field got mixed up when editing/adding an existing custom field
 - Bug Fixed: Institutions>Students>Academic>Textbook: 404 error when viewing 
@@ -606,7 +606,7 @@
 - Implemented: Develop "External Data Source - Exams" config page for OpenEMIS Exams
 - Implemented: Develop a new "All Student Statuses" on the Assessment Periods page
 - Bug Fixed: Institutions>Performance>Assessments: Users is still unable to edit past assessments or regenerate past student report cards
-- Bug Fixed: Development of OpenEMIS Core v2 APIs (CakePHP) as v4 APIs (Laravel) - Part 1 Remainder
+- Bug Fixed: Development of Classera EMS v2 APIs (CakePHP) as v4 APIs (Laravel) - Part 1 Remainder
 - Bug Fixed: Administration>Scholarships>Applications: 404 error when viewing and editing
 - Bug Fixed: Institutions > Staff > Training > Application > Apply: The page goes to 404 error
 - Bug Fixed: Institutions>Performance>Assessments: Report cannot generate and taking a long time
@@ -624,7 +624,7 @@
 - Implemented: 2.11 Add workflow for staff behavior
 - Implemented: Changes to the Meals feature
 - Implemented: Add the Counselling feature to the Directory module
-- Implemented: Development of OpenEMIS Core v2 APIs (CakePHP) as v4 APIs (Laravel) - Part 1
+- Implemented: Development of Classera EMS v2 APIs (CakePHP) as v4 APIs (Laravel) - Part 1
 - Implemented: Rename "External Data Source" to "External Data Source - Identity"
 - Implemented: Develop permissions to allow the License and Qualifications tabs under the Professional menu for all users
 - Implemented: Develop changes to the Communication Alerts and Alert Rules pages
@@ -673,7 +673,7 @@
 
 ### [3.87.1] - 2023-06-19
 - Implemented: Develop a mechanism for past assessment period grades to be modified and to regenerate impacted report cards
-- Implemented: Develop client id UI for all OpenEMIS Core APIs v4
+- Implemented: Develop client id UI for all Classera EMS APIs v4
 - Bug Fixed: Institutions > Behaviour > List page : Status is not showing correctly
 - Bug Fixed: Institutions>Staff>Transfer: Security role is not updated
 - Bug Fixed: Institutions>Report Cards>Comments: The staff is a homeroom teacher and a subject teacher however the staff is not able to see the subject tab
@@ -684,7 +684,7 @@
 
 ### [3.87.0] - 2023-06-14
 - Implemented: Development of JoLearn v4 API - institutions assessment grades
-- Implemented: Develop client id API for all OpenEMIS Core APIs v4
+- Implemented: Develop client id API for all Classera EMS APIs v4
 - Bug Fixed: Institutions>Performance>Assessments: The current assessment report is no longer showing the Assessment Period scores
 - Bug Fixed: Institutions > Add Students: Unable to add student via identity number
 - Bug Fixed: Institutions > Staff > Carreer > Leave Tab : System does not show archive button
@@ -698,11 +698,11 @@
 
 ### [3.86.0] - 2023-06-10
 - Implemented: Develop standard Security Reports
-- Implemented: Develop OpenEMIS Core textbook export
+- Implemented: Develop Classera EMS textbook export
 - Implemented: Create an Out Of School Staff Report
 - Implemented: Develop changes to the student behaviour page
 - Implemented: Add an Industry dropdown to the Employments feature
-- Implemented: Update OpenEMIS Core Swagger API v4 documentation
+- Implemented: Update Classera EMS Swagger API v4 documentation
 - Implemented: Develop changes to the staff behaviour page
 - Bug Fixed: Update the logic of Student Performance Summary Placeholders to fetch data from the transactional table
 - Bug Fixed: Administration>System Configurations>Data Outliers: Maximum Student Number and Minimum student number validation not working
@@ -885,7 +885,7 @@
 - Bug Fixed: Institutions > Survey > Forms: Unable to see all/newly created surveys
 
 ### [3.79.1] - 2023-03-17
-- Implemented: Changes to Data Archiving feature in OpenEMIS Core - Part III
+- Implemented: Changes to Data Archiving feature in Classera EMS - Part III
 - Implemented: Reports > Institutions : Develop Student Absences per Day report
 - Bug Fixed: Institutions > Performance > Report Cards : Font/Cell stylings are not the same as Excel
 - Bug Fixed: Reports > Staff > Staff Subjects: Report is empty
@@ -915,7 +915,7 @@
 
 ### [3.78.2] - 2023-03-02
 - Implemented: Develop APIs for Registrations
-- Implemented: Develop keys for all OpenEMIS Core APIs v4
+- Implemented: Develop keys for all Classera EMS APIs v4
 - Bug Fixed: Administration>Profile>Classes: Report is stuck in progress
 - Bug Fixed: Administration > System Setup > Field Options: Staff Position Titles: There are no options under the field for staff position categories even when staff position categories are configured
 - Bug Fixed: Institution > Students page: The drop-down list for the education grades is not in order
@@ -932,7 +932,7 @@
 - Implemented: Design changes to add staff and student
 - Bug Fixed: Administration>Communication>Alert: Alerts > Attendance doesn't seem to be working
 - Bug Fixed: Institution>Profile>Institution: Report is stuck in progress
-- Bug Fixed: Implement database foreign keys for OpenEMIS Core-Fixing 404 errors
+- Bug Fixed: Implement database foreign keys for Classera EMS-Fixing 404 errors
 - Bug Fixed: Adding of foreign keys back
 - Bug Fixed: Administration>Data Management>Archive: Feature name is not showing
 - Bug Fixed: Add academic_period_id to institutions_grade table
@@ -1012,9 +1012,9 @@
 - Bug Fixed : Institutions>Staff>Add: User added in the wrong security group
 
 ### [3.77.4] - 2023-01-12
-- Implemented: Generate UIS Report from OpenEMIS Core
+- Implemented: Generate UIS Report from Classera EMS
 - Implemented: Institutions > Shifts : Include multi select box for period
-- Implemented: Update design to select feature for Data Archiving in OpenEMIS Core
+- Implemented: Update design to select feature for Data Archiving in Classera EMS
 - Bug Fixed: Institutions>Performance>Report Cards: Report card is not reflecting the timezone set in System Configuration
 - Bug Fixed: Dependancy POCOR-7023 : Attendance query is causing huge server load and eventually timeout.
 - Bug Fixed: Reports > Student > Contacts: Report is stuck in progress
@@ -1025,7 +1025,7 @@
 - Bug Fixed: Followup to Add additional triggers for the Add Class and Update Class Webhooks
 - Bug Fixed: Institutions>Survey>Forms: Assignee field should be below status field
 - Bug Fixed: Institutions>Students>Add: User is unable to add students
-- Bug Fixed: Institution>Survey: Survey uploaded does not display the changes in newer version of OpenEMIS Core
+- Bug Fixed: Institution>Survey: Survey uploaded does not display the changes in newer version of Classera EMS
 - Bug Fixed: Reports>Custom: Getting No Options for both Education Grade and Education Subject
 
 ### [3.77.3] - 2023-01-10
@@ -1045,7 +1045,7 @@
 - Implemented: Develop a function for two factor authentication (email)
 - Bug Fixed: Institutions>Attendance>Students: Unable to change absence>excused/unexcused to other types of attendances
 - Bug Fixed: Institutions > Students > Pending Transfer Out: 404 error when approving cancellation
-- Bug Fixed: OpenEMIS Core 404 page is showing the header bar
+- Bug Fixed: Classera EMS 404 page is showing the header bar
 
 ### [3.77.0] - 2023-01-03
 - Implemented: Develop APIs for WebGIS
@@ -1133,7 +1133,7 @@
 
 ### [3.76.0] - 2022-11-24
 - Implemented: Record validation when adding guardians
-- Implemented: Implement database foreign keys for OpenEMIS Core
+- Implemented: Implement database foreign keys for Classera EMS
 
 ### [3.75.38] - 2022-11-23
 - Implemented: Develop Summary Tables for WebGIS
@@ -1152,10 +1152,10 @@
 
 ### [3.75.36] - 2022-11-09
 - Implemented: Create Placeholder for Student Report Card to display user that enters marks and comments
-- Implemented: Change to the OpenEMIS Core Special Needs feature
+- Implemented: Change to the Classera EMS Special Needs feature
 - Implemented: Update an existing Report: Institution Positions
 - Implemented: Develop gender placeholder in student report card
-- Implemented: Change to the OpenEMIS Core Special Needs feature(Plan)
+- Implemented: Change to the Classera EMS Special Needs feature(Plan)
 - Bug Fixed: Institution>Performance>Report Card: User should be allow to email all pdf or email all excels
 - Bug Fixed: Institutions>Appointment>Positions: User is able to add positions that is inactive
 - Bug Fixed: Institutions>Dashboard: Dashboard are not reflecting Student Attendance correctly
@@ -1233,7 +1233,7 @@
 
 ### [3.75.28] - 2022-09-15
 - Bug Fixed: Institution > Students > Transfer: Education Grade is Empty Even Though There are Students in that specific year
-- Bug Fixed: Implement database foreign keys for OpenEMIS Core-Issues raised
+- Bug Fixed: Implement database foreign keys for Classera EMS-Issues raised
 - Bug Fixed: API: User with OpenEMIS ID 2488140537 has no academic history records, but he has marks in 7 different grades.
 - Bug Fixed: Institutions>Student>Bulk Transfer: Assignee is assigned wrongly
 
@@ -1262,7 +1262,7 @@
 - Bug Fixed: Administration>System Setup>Configurations: Logout webhook is not working
 
 ### [3.75.24] - 2022-08-30
-- Bug Fixed: Implement database foreign keys for OpenEMIS Core-Issues raised 2
+- Bug Fixed: Implement database foreign keys for Classera EMS-Issues raised 2
 - Bug Fixed: Directory>Student: Student is showing the wrong institution
 - Bug Fixed: Institutions>Students>Transfer: Assignee option is not accurate
 - Bug Fixed: Institution > General > Map: Back button should be removed
@@ -1355,7 +1355,7 @@
 - Bug Fixed: Review and run queries for migration
 
 ### [3.75.15] - 2022-07-07
-- Implemented: Update OpenEMIS Core Russian Translation files
+- Implemented: Update Classera EMS Russian Translation files
 - Implemented: Add capacity column to Reports > Institution: Classes
 - Bug Fixed: Reports > Staff > Staff Subjects: Changes to standard report
 - Bug Fixed: Administration>System Setup>APIS>Securities: Assessment api is missing
@@ -1851,9 +1851,9 @@
 - Bug Fixed: Institutions>Students: System shows more than one row for students who has more than one identity number
 
 ### [3.70.1] - 2021-10-08
-- Implemented: OpenEMIS Core: Webhook Education Structure System - Create
-- Implemented: OpenEMIS Core: Webhook Academic Period - Delete
-- Implemented: OpenEMIS Core: Webhook Role - Update
+- Implemented: Classera EMS: Webhook Education Structure System - Create
+- Implemented: Classera EMS: Webhook Academic Period - Delete
+- Implemented: Classera EMS: Webhook Role - Update
 - Implemented: Add Export button function - Institutions > Staff > Staff1 (include classes subjects absences)
 - Implemented: Change text in the Updates function
 - Implemented: Add Session Start Date, Session End Date and Credit Hours to Professional Development Results List Page
@@ -1866,8 +1866,8 @@
 - Bug Fixed: Institution>Attendance>Students:404 error when trying to access the Archive page for Attendance
 
 ### [3.70.0] - 2021-10-01
-- Implemented: OpenEMIS Core: Webhook Role - Create
-- Implemented: OpenEMIS Core: Webhook Role - Delete
+- Implemented: Classera EMS: Webhook Role - Create
+- Implemented: Classera EMS: Webhook Role - Delete
 - Implemented: Update Export button function - Institutions > Academic > Classes (include homeroom teacher and number of students per classes by gender)
 - Implemented: Add Export button function - Institutions > Infrastructures > WASH > Water
 - Bug Fixed: Institution > Academic > Students/Staff: Student or Staff Search 404 Error
@@ -1879,7 +1879,7 @@
 - Bug Fixed: Report>Institution: No data generated when Area Level and Area Education not selected and There is no link between the Area Level and Area Education and the Institution filters.
 
 ### [3.69.4] - 2021-09-23
-- Implemented: OpenEMIS Core: Webhook Education Structure System - Delete
+- Implemented: Classera EMS: Webhook Education Structure System - Delete
 - Bug Fixed: Administrations > Security > Roles > Permission: To grant access for Import Extracurricular to users
 - Bug Fixed: Institutions>Report Cards>Comments:Earliest Assignment End Date get pushed
 - Bug Fixed: Administration > Profiles > Students: Add Area Level Filter before Area Filter
@@ -1932,7 +1932,7 @@
 - Bug Fixed: Report>Institution: Add Academic Period, Area Level, Area Name and Institution Name filters to all reports
 
 ### [3.69.0] - 2021-08-26
-- Implemented: OpenEMIS Core: Webhook Education Area - Update
+- Implemented: Classera EMS: Webhook Education Area - Update
 - Implemented: Add Export button function - Institutions > Infrastructures > Utilities > Internet
 - Bug Fixed: Institutions>Students: No Classes Available for Graduation in the new year
 
@@ -1994,7 +1994,7 @@
 ### [3.67.1] - 2021-07-09
 - Implemented: Add default identity, staff position and add date range filter to Reports > Institution > Staff leave
 - Bug Fixed: Institution > Attendance > Students: Student has Enrolled status but is not appearing on Attendance page
-- Implemented: OpenEMIS Core: Webhook Education Structure System - Update
+- Implemented: Classera EMS: Webhook Education Structure System - Update
 - Implemented: Add Export button function - Institutions > General > Contacts > People
 
 ### [3.67.0] - 2021-07-02
@@ -2044,16 +2044,16 @@
 - Bug Fixed: Reports > Students > Student Health Report : Page Loading Issue
 - Bug Fixed: Administrations > System Setup > Localizations > Translations: Missing Translations
 - Bug Fixed: Reports > Students > Student Health Report > Overview: Transferred student still appear in the Institution which student was Transferred Out from
-- Implemented: OpenEMIS Core: Webhook Education Area - Create
-- Implemented: OpenEMIS Core: Webhook Education Area - Delete
-- Implemented: OpenEMIS Core: Webhook Education Structure Level - Create
-- Implemented: OpenEMIS Core: Webhook Education Structure Level - Update
-- Implemented: OpenEMIS Core: Webhook Education Structure Level - Delete
-- Implemented: OpenEMIS Core: Webhook Education Structure Subject - Update
-- Implemented: OpenEMIS Core: Webhook Education Structure Subject - Delete
-- Implemented: OpenEMIS Core: Webhook Education Structure Grade Subject - Create
-- Implemented: OpenEMIS Core: Webhook Education Structure Grade Subject - Update
-- Implemented: OpenEMIS Core: Webhook Education Structure Grade Subject - Delete
+- Implemented: Classera EMS: Webhook Education Area - Create
+- Implemented: Classera EMS: Webhook Education Area - Delete
+- Implemented: Classera EMS: Webhook Education Structure Level - Create
+- Implemented: Classera EMS: Webhook Education Structure Level - Update
+- Implemented: Classera EMS: Webhook Education Structure Level - Delete
+- Implemented: Classera EMS: Webhook Education Structure Subject - Update
+- Implemented: Classera EMS: Webhook Education Structure Subject - Delete
+- Implemented: Classera EMS: Webhook Education Structure Grade Subject - Create
+- Implemented: Classera EMS: Webhook Education Structure Grade Subject - Update
+- Implemented: Classera EMS: Webhook Education Structure Grade Subject - Delete
 - Bug Fixed: Report > Institution > Student Attendance Summary report: Education Grade listed not correct
 - Bug Fixed: Administration > System Setup > Academic Period > Delete: Encountered 404 error upon deleting the record
 - Bug Fixed: Institution > Appointment: To add "s" at the end of Appointment
@@ -2068,18 +2068,18 @@
 - Bug Fixed: Rename Profile module to Personal
 - Bug Fixed: Administration > System Setup > Education Structure > Programmes: Next Programme was not copied when user copied from the current Academic Period to next Academic Period
 - Bug Fixed: Reports > Students > Student Health Report > Overview: Student without Middle and Third Name has a big gap in between the First and Last Name
-- Implemented: OpenEMIS Core: Webhook Education Structure Cycle - Create
-- Implemented: OpenEMIS Core: Webhook Education Structure Cycle - Update
-- Implemented: OpenEMIS Core: Webhook Education Structure Cycle - Delete
-- Implemented: OpenEMIS Core: Webhook Education Structure Programme - Create
-- Implemented: OpenEMIS Core: Webhook Education Structure Programme - Update
-- Implemented: OpenEMIS Core: Webhook Education Structure Programme - Delete
-- Implemented: Bug Fixed: OpenEMIS Core: Webhook Education Structure Grade - Create
-- Implemented: OpenEMIS Core: Webhook Education Structure Grade - Update
-- Implemented: OpenEMIS Core: Webhook Education Structure Grade - Delete
-- Implemented: OpenEMIS Core: Webhook Education Structure Subject - Create
-- Implemented: OpenEMIS Core: Webhook Academic Period - Create
-- Implemented: OpenEMIS Core: Webhook Academic Period - Update
+- Implemented: Classera EMS: Webhook Education Structure Cycle - Create
+- Implemented: Classera EMS: Webhook Education Structure Cycle - Update
+- Implemented: Classera EMS: Webhook Education Structure Cycle - Delete
+- Implemented: Classera EMS: Webhook Education Structure Programme - Create
+- Implemented: Classera EMS: Webhook Education Structure Programme - Update
+- Implemented: Classera EMS: Webhook Education Structure Programme - Delete
+- Implemented: Bug Fixed: Classera EMS: Webhook Education Structure Grade - Create
+- Implemented: Classera EMS: Webhook Education Structure Grade - Update
+- Implemented: Classera EMS: Webhook Education Structure Grade - Delete
+- Implemented: Classera EMS: Webhook Education Structure Subject - Create
+- Implemented: Classera EMS: Webhook Academic Period - Create
+- Implemented: Classera EMS: Webhook Academic Period - Update
 - Bug Fixed: Institution > Performance > Assessment > Import: Add Education Subject field on the Import Summary page
 - Implemented: Institutions > Infrastructure > Overview > Rooms : Add a new field called area
 
@@ -2093,7 +2093,7 @@
 
 ### [3.65.4] - 2021-05-24
 - Bug Fixed: Institution > Student > Transfer: Start Date and End Date is reflected incorrectly
-- Implemented: Changes to Data Archiving feature in OpenEMIS Core - Part II
+- Implemented: Changes to Data Archiving feature in Classera EMS - Part II
 - Implemented: Remove default date for student / staff actions
 
 ### [3.65.3] - 2021-05-21
@@ -2130,7 +2130,7 @@
 - Bug Fixed: Institution > Staff > Career > Leave tab: Leave filter not able to filter Staff Leave Type accordingly### [3.65.1] - 2021-05-07
 
 ### [3.65.0] - 2021-04-30
-- Implemented: Changes to Data Archiving feature in OpenEMIS Core
+- Implemented: Changes to Data Archiving feature in Classera EMS
 - Implemented: Improvement of the Workflow module
 - Bug Fixed: Institution > Attendance > Student > All Day > Export Page
 - Bug Fixed: Institution > Meals > Students Dashboard Statistics
@@ -2415,7 +2415,7 @@
 - Bug Fixed: Institution > Academic > Schedules: Schedules not found even though user has been given the Permission rights
 
 ### [3.58.2] - 2020-11-19
-- Data Archiving feature in OpenEMIS Core
+- Data Archiving feature in Classera EMS
 - Develop Reports > Directoty > User List
 - Develop API Feature student assessment (write)
 - Develop API Feature student assessment (read)

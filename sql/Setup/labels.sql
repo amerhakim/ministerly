@@ -11,7 +11,7 @@ SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
 --
--- Database: `dev_openemis_refresh`
+-- Database: `dev_classera_ems`
 --
 
 -- --------------------------------------------------------
@@ -105,7 +105,7 @@ INSERT INTO `labels` (`module`, `field`, `code`, `en`, `ar`, `zh`, `es`, `fr`, `
 ('InstitutionSiteProgrammes', 'education_programme_id', NULL, 'Programme', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, '2015-08-02 14:09:17'),
 ('InstitutionSiteProgrammes', 'modified', NULL, 'Modified On', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, '2015-08-02 14:09:17'),
 ('InstitutionSiteProgrammes', 'modified_user_id', NULL, 'Modified By', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, '2015-08-02 14:09:17'),
-('InstitutionSiteProgrammes', 'openemis_no', NULL, 'OpenEMIS ID', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, '2015-08-02 14:09:17'),
+('InstitutionSiteProgrammes', 'openemis_no', NULL, 'Classera ID', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, '2015-08-02 14:09:17'),
 ('InstitutionSiteSections', 'classes', NULL, 'Subjects', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, '2015-08-02 14:09:51'),
 ('InstitutionSiteSections', 'institution_site_shift_id', NULL, 'Shift', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, '2015-08-02 14:09:17'),
 ('InstitutionSiteSections', 'name', NULL, 'Class Name', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, '2015-08-02 14:09:17'),
@@ -149,7 +149,7 @@ INSERT INTO `labels` (`module`, `field`, `code`, `en`, `ar`, `zh`, `es`, `fr`, `
 ('SpecialNeeds', 'special_need_date', NULL, 'Date', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, '2015-08-02 14:09:17'),
 ('SpecialNeeds', 'special_need_type_id', NULL, 'Type', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, '2015-08-02 14:09:17'),
 ('Staff', 'institution_site_position_id', NULL, 'Position', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, '2015-08-07 00:00:00'),
-('Staff', 'openemis_no', NULL, 'OpenEMIS ID', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, '2015-08-02 14:09:17'),
+('Staff', 'openemis_no', NULL, 'Classera ID', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, '2015-08-02 14:09:17'),
 ('Staff', 'photo_content', NULL, 'Photo', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, '2015-08-02 14:09:17'),
 ('Staff', 'security_user_id', NULL, 'Staff', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, '2015-08-07 00:00:00'),
 ('StaffAbsences', 'absence_type', NULL, 'Type', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, '2015-08-02 14:09:17'),
@@ -163,7 +163,7 @@ INSERT INTO `labels` (`module`, `field`, `code`, `en`, `ar`, `zh`, `es`, `fr`, `
 ('StaffActivities', 'created', NULL, 'Modified On', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, '2015-08-02 14:09:17'),
 ('StaffActivities', 'created_user_id', NULL, 'Modified By', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, '2015-08-02 14:09:17'),
 ('StaffActivities', 'model', NULL, 'Module', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, '2015-08-02 14:09:17'),
-('StaffAttendances', 'openemis_no', NULL, 'OpenEMIS No', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, '2015-08-02 14:09:17'),
+('StaffAttendances', 'openemis_no', NULL, 'Classera No', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, '2015-08-02 14:09:17'),
 ('StaffAttendances', 'security_user_id', NULL, 'Staff', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, '2015-08-02 14:09:17'),
 ('StaffBehaviours', 'date_of_behaviour', NULL, 'Date', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, '2015-08-02 14:09:17'),
 ('StaffBehaviours', 'institution_site_id', NULL, 'Institution', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, '2015-08-02 14:09:17'),
@@ -175,7 +175,7 @@ INSERT INTO `labels` (`module`, `field`, `code`, `en`, `ar`, `zh`, `es`, `fr`, `
 ('StudentActivities', 'created', NULL, 'Modified On', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, '2015-08-02 14:09:17'),
 ('StudentActivities', 'created_user_id', NULL, 'Modified By', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, '2015-08-02 14:09:17'),
 ('StudentActivities', 'model', NULL, 'Module', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, '2015-08-02 14:09:17'),
-('StudentAttendances', 'openemis_no', NULL, 'OpenEMIS No', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, '2015-08-02 14:09:17'),
+('StudentAttendances', 'openemis_no', NULL, 'Classera No', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, '2015-08-02 14:09:17'),
 ('StudentAttendances', 'security_user_id', NULL, 'Student', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, '2015-08-02 14:09:17'),
 ('StudentBehaviours', 'section', NULL, 'Class', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, '2015-08-02 14:09:51'),
 ('StudentBehaviours', 'security_user_id', NULL, 'Student', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, '2015-08-02 14:09:17'),
@@ -191,7 +191,7 @@ INSERT INTO `labels` (`module`, `field`, `code`, `en`, `ar`, `zh`, `es`, `fr`, `
 ('StudentFees', 'paid', NULL, 'Paid', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, '2015-08-02 14:09:17'),
 ('StudentFees', 'programme', NULL, 'Programme', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, '2015-08-02 14:09:17'),
 ('StudentFees', 'title', NULL, 'Fees', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, '2015-08-02 14:09:17'),
-('Students', 'openemis_no', NULL, 'OpenEMIS ID', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, '2015-08-02 14:09:17'),
+('Students', 'openemis_no', NULL, 'Classera ID', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, '2015-08-02 14:09:17'),
 ('Students', 'photo_content', NULL, 'Photo', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, '2015-08-02 14:09:17'),
 ('Students', 'section', NULL, 'Class', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, '2015-08-02 14:09:51'),
 ('StudentSections', 'institution_site_section_id', NULL, 'Class', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, '2015-08-02 14:09:51'),
@@ -211,7 +211,7 @@ INSERT INTO `labels` (`module`, `field`, `code`, `en`, `ar`, `zh`, `es`, `fr`, `
 ('Users', 'last_name', NULL, 'Last Name', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, '2015-08-02 14:09:17'),
 ('Users', 'middle_name', NULL, 'Middle Name', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, '2015-08-02 14:09:17'),
 ('Users', 'name', NULL, 'Name', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, '2015-08-02 14:09:17'),
-('Users', 'openemis_no', NULL, 'OpenEMIS ID', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, '2015-08-02 14:09:17'),
+('Users', 'openemis_no', NULL, 'Classera ID', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, '2015-08-02 14:09:17'),
 ('Users', 'photo_content', NULL, 'Photo', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, '2015-08-02 14:09:17'),
 ('Users', 'postal_code', NULL, 'Postal', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, '2015-08-02 14:09:17'),
 ('Users', 'preferred_name', NULL, 'Preferred Name', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, '2015-08-02 14:09:17'),

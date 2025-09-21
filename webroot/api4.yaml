@@ -2,16 +2,16 @@ openapi: 3.0.0
 info:
     title: OpenEMIS Core
     description: |-
-        The [OpenEMIS](https://www.openemis.org/) initiative aims to deploy a high-quality Education Management Information System (EMIS) designed to collect and report data on schools, students, teachers and staff. The system was conceived by `UNESCO` to be a royalty-free system that can be easily customized to meet the specific needs of member countries.
-    termsOfService: https://www.openemis.org/terms-of-service/
+        The [Classera EMS](https://www.classera.com/) initiative aims to deploy a high-quality Education Management Information System (EMIS) designed to collect and report data on schools, students, teachers and staff. The system was conceived by `Classera` to be a royalty-free system that can be easily customized to meet the specific needs of member countries.
+    termsOfService: https://www.classera.com/terms-of-service/
     contact:
-        email: support@openemis.org
+        email: support@classera.com
     license:
         name: GNU General Public License V3.0
         url: https://www.gnu.org/licenses/gpl-3.0.en.html
     version: 4.0.0
 servers:
-    - url: https://demo.openemis.org/core
+    - url: https://demo.classera.com/core
 tags:
     - name: User Authentication
       description: APIs for User Authentication

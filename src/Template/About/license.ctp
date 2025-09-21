@@ -6,10 +6,30 @@ $this->start('panelBody');
 	<div id="license" class="about-wrapper">
 		<div class="about-container">
 			<h3>GNU General Public License</h3>
-			<p>Version 3, 29 June 2007</p>
+			<p>Version 2, June 1991</p>
 			<blockquote>
-				<p>Copyright © 2007 Free Software Foundation, Inc. <a href="https://fsf.org/" target="_blank">https://fsf.org/</a><br>
+				<p>Copyright © 1989, 1991 Free Software Foundation, Inc. <a href="https://fsf.org/" target="_blank">https://fsf.org/</a><br>
 				Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.</p>
+			</blockquote>
+
+			<hr>
+
+			<h3>Classera EMS Copyright Notice</h3>
+			<blockquote>
+				<p><strong>Classera EMS (Education Management System)</strong><br>
+				Copyright © 2024 Classera. All rights reserved.</p>
+				
+				<p>This program is based on open source software and is distributed under the
+				GNU General Public License version 2 (GPL-2.0).</p>
+				
+				<p>Classera EMS is a comprehensive Education Management Information System
+				designed to manage education data at the national, district and school level.</p>
+				
+				<p>For more information about Classera EMS, please visit: 
+				<a href="https://classera.com" target="_blank">https://classera.com</a></p>
+				
+				<p>For support and licensing inquiries, please contact: 
+				<a href="mailto:support@classera.com">support@classera.com</a></p>
 			</blockquote>
 
 			<hr>

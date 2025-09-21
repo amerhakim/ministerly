@@ -88,12 +88,11 @@ Router::scope('/', function (RouteBuilder $routes) {
      * You can remove these routes once you've connected the
      * routes you want in your application.
      */
-    $routes->fallbacks('Route');
-});
+    // Installer routes - must be before fallbacks
+    $routes->connect('/Installer', ['plugin' => 'Installer', 'controller' => 'Installer', 'action' => 'index']);
+    $routes->connect('/Installer/:action', ['plugin' => 'Installer', 'controller' => 'Installer']);
 
-Router::scope('/Installer', ['plugin' => 'Installer', 'controller' => 'Installer'], function ($route) {
-    $route->extensions(['json']);
-    $route->connect('/:action');
+    $routes->fallbacks('Route');
 });
 
 

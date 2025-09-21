@@ -13,11 +13,11 @@
 	
 	if($mode['core'] == true){
 		$application_mode = 'core';
-		$application_name = 'OpenEMIS Core';
+		$application_name = 'Classera EMS';
 		$application_colour = '6699CC';
 		$application_login_image = 'OpenEMIS_Core_Login_Image_Reduced.jpg';
-		$application_sql_name = 'prd_cor_dmo';
-		$application_db_user_name = 'prd_core_user';
+		$application_sql_name = 'classera_ems';
+		$application_db_user_name = 'classera_user';
 		$application_theme = 'core';
 		$application_favicon = '_core';
 	}else if($mode['census'] == true){

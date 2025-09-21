@@ -1,16 +1,21 @@
-<p align="center"><img src="https://www.openemis.org/wp-content/uploads/2018/04/OpenEMIS_Logo_Size512x199.png" width=1000></p>
+<p align="center"><img src="https://classera.com/assets/images/classera-logo.png" width=1000></p>
 
-# OpenEMIS Core
+# Classera EMS
 
-OpenEMIS Core is an open source Education Management Information System (EMIS) designed to manage education data at the national, district and school level. OpenEMIS is widely used in many countries around the world to manage schools, students and staff.
+Classera EMS (Education Management System) is a comprehensive Education Management Information System (EMIS) designed to manage education data at the national, district and school level. Classera EMS is built on proven open source technology and is widely used by educational institutions worldwide to manage schools, students and staff.
 
-You can download OpenEMIS Core from the [OpenEMIS website download page](https://www.openemis.org/downloads) or from [GitHub](https://github.com/OpenEMIS/core) and host it on your own infrastructure, or [contact the OpenEMIS team](https://www.openemis.org/get-started) to arrange cloud hosting. 
+Classera EMS is provided as open source software, under the [GNU General Public License version 2](https://www.gnu.org/licenses/gpl-2.0.html).
 
-OpenEMIS is provided freely as open source software, under the [GNU General Public License](https://www.openemis.org/resources/agreements/license-agreement). 
+## License
 
-OpenEMIS is written in PHP and JavaScript and uses a MySQL database.    
+Copyright (C) 2024 Classera. All rights reserved.
 
-See the OpenEMIS Core [product page](https://www.openemis.org/products/core) or the [online knowledge base](https://support.openemis.org/core) for more information. 
+This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
 
-Here is the OpenEMIS Core Installation knowledge base article: 
-<https://support.openemis.org/core/en/installation>
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>. 
+
+Classera EMS is written in PHP and JavaScript and uses a MySQL database.    
+
+For more information about Classera EMS, please visit [Classera.com](https://classera.com) or contact our support team.

@@ -51,16 +51,22 @@
                     <h1>Welcome to <?= APPLICATION_NAME;  ?> </h1>
                     <p style="margin-top: 30px">
                     <?php 
-                        if (file_exists(ROOT . DS . LICENSE)) {
-                            echo file_get_contents(ROOT . DS . LICENSE); 
+                        if (file_exists(ROOT . DS . 'LICENSE')) {
+                            echo file_get_contents(ROOT . DS . 'LICENSE'); 
                         }
                     ?>
                     </p>
 
                     <p style="margin-top: 30px">
-                    Copyright © 2017 KORD IT. This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or any later version. This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this program. If not, see GNU. For more information please wire to contact@openemis.org.
+        <strong>Classera License:</strong> Copyright © 2024 Classera. All rights reserved.
 
-                    By clicking Next, you agree to the terms stated in the <?=$productName?> License Agreement above.
+        This software and all related materials are the exclusive property of Classera. All intellectual property rights, including copyrights, patents, and trademarks, are owned by Classera and are protected by applicable laws and international treaties.
+
+        This program is licensed, not sold. It is provided under a perpetual license to the authorized licensee, strictly for use in accordance with the terms and conditions set forth in the Classera License Agreement. Any reproduction, redistribution, modification, or use of this software or its components, in whole or in part, is strictly prohibited except as expressly permitted by Classera in writing.
+
+        This program is provided "as is" without warranty of any kind, either express or implied, including but not limited to the implied warranties of merchantability, fitness for a particular purpose, or non-infringement. In no event shall Classera be liable for any damages arising from the use of this software.
+
+        For more information or to obtain a copy of the license agreement, please contact support@classera.com. By using this software, you acknowledge and agree to the terms and conditions of the Classera License Agreement.
                     </p>
                     <div class="form-group">
                         <a href=<?=$this->Url->build(['plugin' => 'Installer', 'controller' => 'Installer', 'action' => 'step2']); ?> type="submit" class="btn btn-default" onClick="(function(){document.querySelector('.spinner-wrapper').style.display='block';})();">Start</a>

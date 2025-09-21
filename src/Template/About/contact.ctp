@@ -7,27 +7,27 @@ $this->start('panelBody');
 	<div class="about-wrapper">
 		<div class="about-container">
 			<div class="img-logo">
-				<?= $this->Html->image('openemis_logo.png');?>
+				<?= $this->Html->image('classera_logo.png');?>
 			</div>	
 
 			<div class="about-content">
-				<p>The <a href="http://www.openemis.org" target="blank">OpenEMIS</a> initiative aims to deploy a high-quality Education Management Information System (EMIS) designed to collect and report data on schools, students, teachers and staff. The system was conceived by UNESCO to be a royalty-free system that can be easily customized to meet the specific needs of member countries.</p>
+				<p><a href="https://classera.com" target="blank">Classera EMS</a> is a comprehensive Education Management Information System (EMIS) designed to collect and report data on schools, students, teachers and staff. Built on proven open source technology, Classera EMS can be easily customized to meet the specific needs of educational institutions worldwide.</p>
 
 				<div class="about-info">
 					<i class="fa fa-phone fa-lg"></i>
-					<span>+65 6659 6068</span>
+					<span>+1 (555) 123-4567</span>
 				</div>
 
 				<div class="about-info">
 					<i class="fa fa-envelope"></i>
 					<span>
-						<a href="mailto:support@openemis.org">support@openemis.org</a>
+						<a href="mailto:support@classera.com">support@classera.com</a>
 					</span>	
 				</div>
 
 				<div class="about-info">
 					<i class="fa fa-map-marker fa-lg"></i>
-					<span>18 Sin Ming Lane #06-38 Midview City Singapore 573960</span>
+					<span>Classera Headquarters, Education Technology Center</span>
 				</div>
 			</div>
 		</div>	

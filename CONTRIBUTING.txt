@@ -1,7 +1,7 @@
-CONTRIBUTING TO OPENEMIS
-========================
+CONTRIBUTING TO CLASSERA EMS
+============================
 
-OpenEMIS was originally developed by UNESCO. OpenEMIS is a result of 
+Classera EMS is built on proven open source technology and is a result of 
 contributions from many people around the world including staff from ministries
 of education, teachers, designers, developers, testers, translators and other 
 stakeholders. 
@@ -9,8 +9,8 @@ stakeholders.
 You are very welcome to join us and contribute to the project. There are many 
 ways you can help, not only with coding.
 
-OpenEMIS is open to community code contributions, though all code must go
+Classera EMS is open to community code contributions, though all code must go
 through design reviews, code reviews, manual testing, integration testing,
 and automated testing.
 
-Please contact support@openemis.org for further information on contributing to OpenEMIS.
+Please contact support@classera.com for further information on contributing to Classera EMS.

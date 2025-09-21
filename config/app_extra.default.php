@@ -46,7 +46,7 @@ return [
             'host' => 'smtp.gmail.com',
             'port' => 587,
             'timeout' => 30,
-            'username' => 'app@openemis.org',
+            'username' => 'app@classera.com',
             'password' => '',
             'client' => null,
             'tls' => true,
@@ -57,7 +57,7 @@ return [
     'Email' => [
         'openemis' => [
             'transport' => 'openemis',
-            'from' => ['app@openemis.org' => 'DoNotReply'],
+            'from' => ['app@classera.com' => 'DoNotReply'],
             //'charset' => 'utf-8',
             //'headerCharset' => 'utf-8',
         ],

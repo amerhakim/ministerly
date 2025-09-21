@@ -29,7 +29,7 @@
 <p>
 You can review these changes in the latest version of OpenEMIS Core:
 <br>
-<a href="https://demo.openemis.org/core/CHANGELOG.md" target="_blank">https://demo.openemis.org/core/CHANGELOG.md</a>
+<a href="https://demo.classera.com/core/CHANGELOG.md" target="_blank">https://demo.classera.com/core/CHANGELOG.md</a>
 </p>
 <p>
 Please click the Update button to approve for the OpenEMIS lab to upgrade your cloud instance of OpenEMIS Core to the latest version.This feature is not relevant for locally hosted instances of OpenEMIS Core.
