@@ -24,30 +24,27 @@ Container Configuration
 
 Database Connection Settings
 ----------------------------
-When running the installer, use these exact settings:
+The installer is now simplified and automatically configured:
 
-Database Connection Information:
-- Database Server Host: mysql
-- Database Server Port: 3306
-- Admin User: root
-- Admin Password: classera_root_2024
-
-IMPORTANT: Use 'mysql' as the hostname, NOT 'localhost'
-This is because Docker containers communicate using internal hostnames.
+Database Connection Information (Auto-configured):
+- Database Server Host: mysql (automatically set)
+- Database Server Port: 3306 (automatically set)
+- Admin User: root (automatically set)
+- Admin Password: classera_root_2024 (automatically set)
 
 The installer will automatically create:
 - Database: classera_ems
 - Database User: classera_user
 - Database Password: [Your chosen password from the form]
 
-Administrator Account
----------------------
+Administrator Account (Required Fields)
+---------------------------------------
 - Account Username: admin (pre-filled, disabled)
 - Account Password: [Your chosen password]
 - Retype Password: [Same password]
 
-Country / Area Information
---------------------------
+Country / Area Information (Required Fields)
+--------------------------------------------
 - Country Code: [Your country code, e.g., US, GB, AE]
 - Country Name: [Your country name, e.g., United States, United Kingdom, United Arab Emirates]
 

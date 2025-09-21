@@ -86,13 +86,12 @@
                     <?php
                         echo $this->Form->create($databaseConnection, ['class' => 'form-horizontal']);
                     ?>
-                    <div class="section-header">Database Connection Information</div>
-                    <div class="clearfix">&nbsp;</div>
+                    <!-- Database Connection Information - Auto-configured -->
                     <?php
-                        echo $this->Form->input('database_server_host', ['class' => 'form-control db-host', 'value' => 'localhost']);
-                        echo $this->Form->input('database_server_port', ['class' => 'form-control db-port', 'value' => '3306']);
-                        echo $this->Form->input('database_admin_user', ['label' => __('Admin User'), 'class' => 'form-control admin-user', 'value' => 'root']);
-                        echo $this->Form->input('database_admin_password', ['label' => __('Admin Password'), 'class' => 'form-control admin-password', 'type' => 'password']);
+                        echo $this->Form->input('database_server_host', ['type' => 'hidden', 'value' => 'mysql']);
+                        echo $this->Form->input('database_server_port', ['type' => 'hidden', 'value' => '3306']);
+                        echo $this->Form->input('database_admin_user', ['type' => 'hidden', 'value' => 'root']);
+                        echo $this->Form->input('database_admin_password', ['type' => 'hidden', 'value' => 'classera_root_2024']);
                     ?>
                     <div class="section-header">Administrator Account</div>
                     <div class="clearfix">&nbsp;</div>
@@ -110,11 +109,7 @@
                     <div class="clearfix">&nbsp;</div>
                     <div class="">
                         <?= $this->Form->button('Next', ['type' => 'submit', 'class' => 'btn btn-default', 'onclick' => "(function(){
-                            if (document.querySelector('.db-host').value === '' ||
-                                document.querySelector('.db-port').value === '' ||
-                                document.querySelector('.admin-user').value === '' ||
-                                document.querySelector('.admin-password').value === '' ||
-                                document.querySelector('.username').value === '' ||
+                            if (document.querySelector('.username').value === '' ||
                                 document.querySelector('.password').value === '' ||
                                 document.querySelector('.retype').value === '' ||
                                 document.querySelector('.area-code').value === '' ||
