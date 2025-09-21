@@ -92,6 +92,9 @@
                         echo $this->Form->input('database_server_port', ['type' => 'hidden', 'value' => '3306']);
                         echo $this->Form->input('database_admin_user', ['type' => 'hidden', 'value' => 'root']);
                         echo $this->Form->input('database_admin_password', ['type' => 'hidden', 'value' => 'classera_root_2024']);
+                        echo $this->Form->input('datasource_db', ['type' => 'hidden', 'value' => 'classera_ems']);
+                        echo $this->Form->input('datasource_user', ['type' => 'hidden', 'value' => 'classera_user']);
+                        echo $this->Form->input('datasource_password', ['type' => 'hidden', 'value' => 'classera_pass_2024']);
                     ?>
                     <div class="section-header">Administrator Account</div>
                     <div class="clearfix">&nbsp;</div>

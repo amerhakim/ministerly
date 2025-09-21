@@ -397,48 +397,38 @@ return [
     private function createDb($pdo, &$db)
     {
         $dbSql = "SELECT 1 FROM INFORMATION_SCHEMA.SCHEMATA WHERE SCHEMA_NAME = ?;";
-        $result = true;
-        $counter = 0;
-        $newDb = '';
-        do {
-            if ($counter == 0) {
-                $newDb = $db;
-                $counter++;
-            } else {
-                $newDb = $db . '_' . $counter++;
-            }
-            $dbExists = $pdo->prepare($dbSql);
-            $dbExists->execute([$newDb]);
-            $result = $dbExists->rowCount();
-        } while ($result);
-        $db = $newDb;
-        $createDbSQL = sprintf("CREATE DATABASE %s CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci", $db);
-        $pdo->exec($createDbSQL);
+        $dbExists = $pdo->prepare($dbSql);
+        $dbExists->execute([$db]);
+        $result = $dbExists->rowCount();
+        
+        if ($result == 0) {
+            // Database doesn't exist, create it
+            $createDbSQL = sprintf("CREATE DATABASE %s CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci", $db);
+            $pdo->exec($createDbSQL);
+        }
+        // If database exists, use it without creating a new one
     }
 
     private function createDbUser($pdo, $host, &$user, $password, $db)
     {
         $host = '%';
         $userSql = "SELECT 1 FROM mysql.user WHERE User = ? AND Host = ?";
-        $result = true;
-        $counter = 0;
-        $newUser = '';
-        do {
-            if ($counter == 0) {
-                $newUser = $user;
-                $counter++;
-            } else {
-                $newUser = $user . '_' . $counter++;
-            }
-            $userExists = $pdo->prepare($userSql);
-            $userExists->execute([$newUser, $host]);
-            $result = $userExists->rowCount();
-        } while ($result);
-        $user = $newUser;
-        $createUserSQL = sprintf("CREATE USER '%s'@'%s' IDENTIFIED BY '%s'", $user, $host, $password);
+        $userExists = $pdo->prepare($userSql);
+        $userExists->execute([$user, $host]);
+        $result = $userExists->rowCount();
+        
+        if ($result == 0) {
+            // User doesn't exist, create it
+            $createUserSQL = sprintf("CREATE USER '%s'@'%s' IDENTIFIED BY '%s'", $user, $host, $password);
+            $pdo->exec($createUserSQL);
+        } else {
+            // User exists, update password
+            $updateUserSQL = sprintf("ALTER USER '%s'@'%s' IDENTIFIED BY '%s'", $user, $host, $password);
+            $pdo->exec($updateUserSQL);
+        }
+        
         $flushPriviledges = "FLUSH PRIVILEGES";
         $grantSQL = sprintf("GRANT ALL PRIVILEGES  ON %s.* TO '%s'@'%s'", $db, $user, $host);
-        $pdo->exec($createUserSQL);
         $pdo->exec($grantSQL);
         $pdo->exec($flushPriviledges);
     }
