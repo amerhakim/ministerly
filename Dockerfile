@@ -1,5 +1,5 @@
 # Classera EMS Dockerfile
-FROM php:8.1-apache
+FROM php:7.4-apache
 
 # Set maintainer information
 LABEL maintainer="Classera <support@classera.com>"

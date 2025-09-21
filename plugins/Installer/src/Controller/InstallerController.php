@@ -86,6 +86,7 @@ class InstallerController extends AppController
         $action = '2';
         $this->set('action', $action);
         $databaseConnection = new DatabaseConnectionForm();
+        $this->set('databaseConnection', $databaseConnection);
         if ($this->request->is('post') && empty($databaseConnection->errors())) {
             try {
                 $execute = $databaseConnection->execute($this->request->data);

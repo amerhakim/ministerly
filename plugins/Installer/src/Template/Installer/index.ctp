@@ -132,7 +132,8 @@
                 </div>
             </div>
             <?php
-                elseif ($action == '3'):
+                endif;
+                if ($action == '3'):
             ?>
             <div class="step-pane sample-pane <?=$action == '3' ? 'active' : '' ?>" data-restrict="3" data-step="3">
                 <div class="step-pane-wrapper">
